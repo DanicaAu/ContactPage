@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <meta charset=”UTF-8”>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <!-- show the window width a narrow width -->
+    <!-- THE TITLE WILL APPEAR IN THE BROWSER WINDOW OR TAB -->
+    <!-- game? blog -->
+    <title> All About Danica </title>
+    <meta nam="description"
+        content="Come learn more about Danica Au, a sewing and baking enthusiast from the South Bay!">
+    <link rel="stylesheet" type="text/css" href="styles-contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/x-icon" href="images/danica logo.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav>
+            <ul class="main-nav">
+                <!-- list item -->
+                <img id="logo" src="images/danica logo.png"
+                    alt="Danica logo pink with DA, intials with angle brackets vertically around it">
+                <li><a href="index.html" class="image-link">Home</a> </li>
+
+                <!-- onclick='changeImage("images/logo@2x.png");'></li> -->
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- front goes on top and slide over center as user scrolls -->
+    <div class="front" class="fade-in">
+        <h2>Hobbies<h2>
+                <p>My hobbies are sewing, baking, and reading. Click below to change image</p>
+                <img id="title-img-left" src="images/similey.png" alt="similey face emoji but with more details" width=30%
+            onclick='changeImage();'>
+    </div>
+    <!-- first part of body that appears at the very top of the websites, usually contains a picture  -->
+    <div class="first">
+
+        <h1>Hi, I'm Danica</h1>
+
+    </div>
+    <div >
+        
+    </div>
+    <footer class = "bottom">
+        <nav>
+        </nav>
+    </footer>
+    <script>
+        function changeImage() {
+            if(document.getElementById("title-img-left").src.indexOf('images/dface.png')!=-1){
+                document.getElementById("title-img-left").src ='images/similey.png';
+            }else{
+                document.getElementById("title-img-left").src = 'images/dface.png';
+            }
+        }
+    </script>
+</body>
+
+</html>
